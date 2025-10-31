@@ -9,7 +9,7 @@ Copy the "Makevars" file to "~/.R/Makevars".
 Install libomp:
 
 ```bash
-brew install libomp
+brew install libomp gfortran
 ```
 
 Whenever you want omp support from an R package, e.g. `data.table`, make sure you do an "source" install, which
