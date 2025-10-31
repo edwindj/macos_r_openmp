@@ -1,0 +1,6 @@
+LIBOMP=$(shell brew --prefix libomp)
+FORTRAN=$(shell brew --prefix gfortran)
+
+CPPFLAGS += -I${LIBOMP}/include -Xclang -fopenmp
+LDFLAGS += -L${LIBOMP}/lib -lomp
+FLIBS=-L${FORTRAN}/lib -L${FORTRAN}/lib/gcc/current
